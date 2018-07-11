@@ -1,92 +1,56 @@
 body {
-  margin: 0;
-  padding: 0;
+  border: 30px solid white;
+}
+
+.hero {
+  width: 95vw;
+  height: 90vh;
+  background: url("b1.jpg") center;
+  background-size: contain;
+}
+
+img {
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  top: 5%;
 }
 
 div.nav {
-  background-color: white;
-  opacity: 0.5;
+  top: 8%;
   width: 100%;
   z-index: 1;
   position: absolute;
   display: flex;
-  justify-content: space-around;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-}
-div.nav img {
-  width: 100px;
-  height: 100px;
+  justify-content: flex-end;
+  right: 8%;
 }
 div.nav a {
+  font-family: "Nova slim";
   font-size: 1.2rem;
-  font-weight: bolder;
-  color: black;
-  align-self: center;
-  font-family: "Quicksand";
+  margin-left: 2.5%;
+  color: white;
+  text-decoration: none;
 }
 div.nav a:hover {
   text-decoration: line-through;
+  animation: strike 0.2s linear;
+  text-decoration-color: white;
 }
-
-.full-screen {
-  width: 100vw;
-  height: 100vh;
-  background: url("5.jpg") center no-repeat;
-  background-size: cover;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-}
-.full-screen h1 {
-  font-family: "Marck script";
-  position: absolute;
-  top: 200px;
-  left: 120px;
-  font-size: 5.5rem;
-}
-.full-screen hr {
-  border: 0;
-  border-top: 5px double black;
-  width: 300px;
-  opacity: 0.5;
-  position: absolute;
-  top: 300px;
-  left: 190px;
-  animation-name: fadeIn;
-  animation-duration: 5s;
-}
-
-@keyframes fadeIn {
+@keyframes strike {
   from {
-    opacity: 0;
+    text-decoration-color: transparent;
+  }
+  to {
+    text-decoration-color: white;
   }
 }
-.a-propos h1 {
-  font-family: "Marck script";
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 50px;
-}
-.a-propos hr {
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 5px double black;
-  width: 400px;
-  opacity: 0.5;
-}
-.a-propos p {
-  line-height: 60px;
-  text-align: center;
-  font-family: "Marck script";
-  font-size: 1.5rem;
-}
-.a-propos img {
-  margin-left: 230px;
-  margin-top: 50px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 2px black;
+
+.a-propos {
+  margin-left: 5%;
+  background-color: red;
+  width: 85vw;
+  height: 50vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
