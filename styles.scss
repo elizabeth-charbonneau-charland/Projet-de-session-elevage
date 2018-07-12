@@ -4,10 +4,13 @@ body {
 }
 
 .hero {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2% ;
   width: 95vw;
-  height: 90vh;
-  background: url("b1.jpg") center;
-  background-size: contain;
+  height: 92vh;
+  background: url("b1.jpg") center no-repeat;
+  background-size: cover;
+
 }
 
 img {
@@ -49,10 +52,17 @@ div.nav {
   }
 }
 
-.a-propos  {
-margin-left: 5%;
-  background-color: red;
-  width: 85vw;
-  height:50vh;
+.columns{
+  padding-top: 5%;
+  background-color: lightgray;
+
+.is-half {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-family: "Nova slim";
+  font-size: 4rem;
 }
+
+}
+
 
