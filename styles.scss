@@ -2,29 +2,26 @@ $nav-height: 100px;
 body {
   margin: 0;
   padding: 0;
-
 }
 
 div.nav {
-  background-color: white;
+  background-color: black;
   opacity: 0.5;
   width: 100%;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   animation-name: fadeIn;
   animation-duration: 2s;
-
   img {
     width: 100px;
     height: $nav-height;
   }
-
   a {
     font-size: 1.2rem;
     font-weight: bolder;
-    color: black;
+    color: white;
     align-self: center;
     font-family: "Quicksand";
 
@@ -32,72 +29,105 @@ div.nav {
       text-decoration: line-through;
     }
   }
-
 }
 
-.full-screen {
-  width: 100vw;
-  height: 100vh;
-  background: url("5.jpg") center no-repeat;
-  background-size: cover;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  h1 {
-    font-family: "Marck script";
-    position: absolute;
-    top: 200px;
-    left: 120px;
-    font-size: 5.5rem;
-  }
-  hr {
-    border: 0;
-    border-top: 5px double black;
-    width: 300px;
-    opacity: 0.5;
-    position: absolute;
-    top: 300px;
-    left: 190px;
+
+  .full-screen {
+    width: 100vw;
+    height: 100vh;
+    background: url("5.jpg") center no-repeat;
+    background-size: cover;
     animation-name: fadeIn;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    h1 {
+      font-family: "Marck script";
+      position: absolute;
+      top: 200px;
+      left: 120px;
+      font-size: 5.5rem;
+    }
+    h2 {
+      font-family: "Marck script";
+      position: absolute;
+      top: 350px;
+      left: 90px;
+      font-size: 3rem;
+    }
+    hr {
+      border: 0;
+      border-top: 5px double black;
+      width: 300px;
+      opacity: 0.5;
+      position: absolute;
+      top: 300px;
+      left: 190px;
+      animation-name: fadeIn;
+      animation-duration: 5s;
+    }
   }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0
+  @keyframes fadeIn {
+    from {
+      opacity: 0
+    }
   }
-}
 
-.a-propos{
+  .a-propos {
+    h1 {
+      font-family: "Marck script";
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 50px;
+    }
+    hr {
+      margin-left: auto;
+      margin-right: auto;
+      border-top: 5px double black;
+      width: 400px;
+      opacity: 0.5;
+    }
+    p {
+      line-height: 60px;
+      text-align: center;
+      font-family: "Marck script";
+      font-size: 1.5rem;
+    }
+  }
 
-h1 {
-  font-family: "Marck script";
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 50px;
-}
+  .flex-image {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 5px double gray;
+    }
+  }
 
-hr {
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 5px double black;
-  width: 400px;
-  opacity: 0.5;
-}
+  hr {
 
-p {
-  line-height: 60px;
-  text-align: center;
-  font-family: "Marck script";
-  font-size: 1.5rem;
-}
-img {
-  margin-left: 230px;
-  margin-top: 50px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 2px black;
-}
-}
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px double black;
+    width: 70%;
+    opacity: 0.5;
+  }
 
+  .images {
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+    h1 {
+      font-family: "Marck script";
+      font-size: 3rem;
+      text-align: center;
+    }
+    img {
+      border: 5px double gray;
+      margin: 10px;
+      width: 300px;
+      height: 300px;
+    }
+  }

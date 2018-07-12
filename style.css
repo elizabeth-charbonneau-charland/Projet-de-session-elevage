@@ -4,11 +4,11 @@ body {
 }
 
 div.nav {
-  background-color: black;
+  background-color: white;
   opacity: 0.5;
   width: 100%;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-around;
   animation-name: fadeIn;
@@ -21,7 +21,7 @@ div.nav img {
 div.nav a {
   font-size: 1.2rem;
   font-weight: bolder;
-  color: white;
+  color: black;
   align-self: center;
   font-family: "Quicksand";
 }
@@ -43,13 +43,6 @@ div.nav a:hover {
   top: 200px;
   left: 120px;
   font-size: 5.5rem;
-}
-.full-screen h2 {
-  font-family: "Marck script";
-  position: absolute;
-  top: 350px;
-  left: 90px;
-  font-size: 3rem;
 }
 .full-screen hr {
   border: 0;
@@ -87,42 +80,13 @@ div.nav a:hover {
   font-family: "Marck script";
   font-size: 1.5rem;
 }
-
-.flex-image {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-.flex-image img {
-  width: 170px;
-  height: 170px;
+.a-propos img {
+  margin-left: 230px;
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 5px double gray;
+  border: 2px black;
 }
 
-hr {
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 5px double black;
-  width: 70%;
-  opacity: 0.5;
-}
-
-.images {
-  flex-wrap: wrap;
-  text-align: center;
-  padding-top: 20px;
-}
-.images h1 {
-  font-family: "Marck script";
-  font-size: 3rem;
-  text-align: center;
-}
-.images img {
-  border: 5px double gray;
-  margin: 10px;
-  width: 300px;
-  height: 300px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
